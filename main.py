@@ -25,11 +25,11 @@ try:
     title = "Enchanted Propaganda"
     file_size = stream.filesize
 
-    print("선택한 영상 제목\n  - "
+    print("➤ 선택한 영상 제목\n  "
           + select_video_title
-          + "\n저장할 영상 제목\n  - "
+          + "\n➤ 저장할 영상 제목\n  "
           + title
-          + "\n저장할 영상 크기\n  - "
+          + "\n➤ 저장할 영상 크기\n  "
           +  str(file_size) + " bytes")
 
 except Exception as ex:
