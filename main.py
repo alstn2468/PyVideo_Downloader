@@ -11,8 +11,7 @@ Blog : https://alstn2468.github.io
 '''
 
 try:
-    # yt = pytube.YouTube(input("Youtube 링크를 입력하세요 : "))
-    yt = pytube.YouTube("https://www.youtube.com/watch?v=Xe3fzIif3_M&start_radio=1&list=RDXe3fzIif3_M")
+    yt = pytube.YouTube(input("Youtube 링크를 입력하세요 : "))
     stream = yt.streams \
                 .filter(progressive=True,
                         file_extension="mp4") \
@@ -21,8 +20,7 @@ try:
                 .first()
 
     select_video_title = yt.title
-    # title = input("저장할 이름을 입력하세요 : ")
-    title = "Enchanted Propaganda"
+    title = input("저장할 이름을 입력하세요 : ")
     file_size = stream.filesize
 
     print("➤ 선택한 영상 제목\n  "
